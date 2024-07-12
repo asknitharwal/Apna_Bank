@@ -1,0 +1,143 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #091655;
+    color: white;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+nav .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.logo img{
+    width: 25%;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1em;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color:rgb(238, 238, 243);
+    color: blue;
+}
+
+.hero {
+    position: relative;
+    background-color: #e6f0ff;
+}
+.hero img{
+    margin-top: 6px;
+    width: 100%;
+object-fit: cover;
+    height: 500px;
+}
+.container {
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    width:35%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background: transparent;
+    border-radius: 10px;
+    color: #eedada;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+input {
+    width: 94%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0; 
+}
+button {
+    width: 48%;
+    padding: 10px;
+    margin-right: 2%;
+    border: none;
+    border-radius: 5px;
+    background-color:rgb(12, 221, 12);
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+button:hover{
+    background-color: green;
+}
+button:last-child {
+    margin-right: 0;
+    background-color:red;
+}
+button:last-child:hover {
+    background-color: #950917;
+}
+
+.alert {
+    position: fixed;
+    top: 64%;
+    left:81%;
+    width:30%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+    text-align: center;
+    z-index: 1000;
+    display: none;
+}
+.alert p {
+    margin: 0;
+}
+.alert button {
+    margin-top: 20px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #092660;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    bottom: 0;
+    width: 100%;
+}
